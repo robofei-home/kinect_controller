@@ -12,7 +12,7 @@ def kinect_controller_client(tilt):
         smart_kinect = rospy.ServiceProxy('kinect_tilt', tilt)
         k_info = smart_kinect(tilt)
         return k_info
-    except
+    except:
         pass
 
 #o client vai pra task
