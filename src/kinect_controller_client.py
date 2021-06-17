@@ -6,11 +6,11 @@ from kinect.srv import tilt, result
 
 #criar a class
 
-def kinect_controller_client(tlt):
+def kinect_controller_client(tilt):
     rospy.wait_for_service('smart_kinect')
     try:
         smart_kinect = rospy.ServiceProxy('kinect_tilt', tilt)
-        k_info = smart_kinect(tlt)
+        k_info = smart_kinect(tilt)
         return k_info
 
 #o client vai pra task
