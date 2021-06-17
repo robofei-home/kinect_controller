@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 from kinect.srv import tilt, result
 import rospy
-
+#criar a class, variavel init -> pub
 class Kinect:
     
     def __init__(self, tilt):
         self.pub=Publish(tilt)
 
     def handle_kinect(tilt):
+        #self.pub.Publish(tilt)
         return result("Success")
 
     def kinect_tilt(self):

@@ -1,8 +1,12 @@
+#nao precisa desse arquivo
+
 #!/usr/bin/env python
 
 import sys
 import rospy
 from kinect.srv import *
+
+#criar a class
 
 def kinect_controller_client(t):
     rospy.wait_for_service('smart_kinect')
@@ -11,11 +15,14 @@ def kinect_controller_client(t):
         k_info = smart_kinect(t)
         return k_info
 
+#o client vai pra task
+
 # def usage():
 #     return "%s [x y]"%sys.argv[0]
 
 if __name__ == "__main__":
-    kinect_controller_client()
+    teste = kinect_controller_client(0.9)
+    print(f"deu bom? {teste}")
     # if len(sys.argv) == 3:
     #     x = int(sys.argv[1])
     #     y = int(sys.argv[2])
