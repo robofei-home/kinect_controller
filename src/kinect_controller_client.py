@@ -1,18 +1,16 @@
-#nao precisa desse arquivo
-
 #!/usr/bin/env python
 
 import sys
 import rospy
-from kinect.srv import *
+from kinect.srv import tilt, result
 
 #criar a class
 
-def kinect_controller_client(t):
+def kinect_controller_client(tlt):
     rospy.wait_for_service('smart_kinect')
     try:
         smart_kinect = rospy.ServiceProxy('kinect_tilt', tilt)
-        k_info = smart_kinect(t)
+        k_info = smart_kinect(tlt)
         return k_info
 
 #o client vai pra task
