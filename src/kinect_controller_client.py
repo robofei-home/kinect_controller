@@ -19,8 +19,11 @@ def kinect_controller_client(tilt):
 #     return "%s [x y]"%sys.argv[0]
 
 if __name__ == '__main__':
-    teste = kinect_controller_client(0.9)
-    print("deu bom? %s", teste)
+    try:
+        teste = kinect_controller_client(0.9)
+        print("deu bom? %s", teste)
+    except KeyboardInterrupt:
+        pass
     # if len(sys.argv) == 3:
     #     x = int(sys.argv[1])
     #     y = int(sys.argv[2])
