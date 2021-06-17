@@ -20,7 +20,7 @@ def kinect_controller_client(tlt):
 
 if __name__ == "__main__":
     teste = kinect_controller_client(0.9)
-    print(f"deu bom? {teste}")
+    #print("deu bom? %s", teste)
     # if len(sys.argv) == 3:
     #     x = int(sys.argv[1])
     #     y = int(sys.argv[2])
