@@ -49,19 +49,19 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 # add_message_files(
 #   FILES
-    kinect_tiltGoal.msg
+#   kinect_tiltGoal.msg
 # )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES
-    kinect_controller.srv
+#   kinect_controller.srv
 # )
 
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-    std_msgs
+#   std_msgs
 # )
 
 ################################################
