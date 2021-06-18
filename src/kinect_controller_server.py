@@ -17,5 +17,5 @@ class Kinect:
         self.pub = rospy.Publisher('/kinect/kinect_position_controller/command', float64, queue_size=10)
         rospy.spin()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     Kinect()
