@@ -2,7 +2,7 @@
 
 import sys
 import rospy
-from kinect.srv import tilt, result
+from kinect_controller.srv import *
 
 #criar a class
 

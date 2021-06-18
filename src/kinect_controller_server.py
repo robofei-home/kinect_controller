@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from kinect.srv import tilt, result
+from kinect_controller.srv import tilt, result
 import rospy
 #criar a class, variavel init -> pub
 class Kinect:
